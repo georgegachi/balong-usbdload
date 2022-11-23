@@ -4,10 +4,10 @@
 #include <stdlib.h>
 
 //***********************************************************************
-//* Поиск сигнатуры и наложение патча
+//* Signature search and patching
 //*
-//* ptype=0 - nop-патч
-//* ptype=1 - br-патч
+//* ptype=0 - nop patch
+//* ptype=1 - br patch
 //***********************************************************************
 uint32_t patch(struct defpatch fp, uint8_t* buf, uint32_t fsize, uint32_t ptype) {
 

@@ -39,14 +39,13 @@ FILE* in;
 while ((opt = getopt(argc, argv, "mr:hx")) != -1) {
   switch (opt) {
    case 'h': 
-     
-printf("\n Утилита для замены таблицы разделов в загрузчиках usbloader\
+     printf("\n Utility to replace partition table in usbloader\
 \n\n\
-%s [ключи] <имя файла usbloader>\n\n\
- Допустимы следующие ключи:\n\n\
--m       - показать текущую карту разделов в usbloader\n\
--x       - извлечь текущую карту в файл ptable.bin\n\
--r <file>- заменить карту разделов на карту из указанного файла\n\
+%s [options] <usbloader filename>\n\n\
+  Valid keys are:\n\n\
+-m - show current partition map in usbloader\n\
+-x - extract current map to ptable.bin\n\
+-r <file>- replace the partition map with the map from the specified file\n\
 \n",argv[0]);
     return;
     

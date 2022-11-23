@@ -34,13 +34,13 @@ uint32_t res;
 while ((opt = getopt(argc, argv, "o:bh")) != -1) {
   switch (opt) {
    case 'h': 
-     
-printf("\n Программа для автоматического патча загрузчиков платформ Balong V7\n\n\
-%s [ключи] <файл загрузчика usbloader>\n\n\
- Допустимы следующие ключи:\n\n\
--o file  - имя выходного файла. По умолчанию производится только проверка возможности патча\n\
--b       - добавить патч, отключающий проверку дефектных блоков\n\
+printf("\n Program for automatic patching of Balong V7 platform loaders\n\n\
+%s [options] <usbloader file>\n\n\
+  Valid keys are:\n\n\
+-o file - output file name. By default, only the possibility of a patch is checked\n\
+-b - add a patch that disables bad block checking\n\
 \n",argv[0]);
+
     return;
 
    case 'o':
